@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery Approach Phonebook App</title>
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body>
+
+<div id="main">
+
+
+	<div id="phone-container">
+
+		<div id="topBar">
+			<div id="title">
+			<p>Adisa's Phonebook<span style="float: right;" class="total">20 Contacts</span></p>
+			</div>
+		<div id="topBarContent">
+			<ul>
+				<li style="margin-left: 30px;"><button id="showContacts">Contacts</button></li>
+				<li style="float: right"><button id="addForm">Add</button></li>
+			</ul>
+		</div>
+		</div>
+
+		<div id="contact-list">
+			<div id="search-form">
+
+			<form>
+			<input placeholder="Search list" type="text" onkeyup="sortContact(this.value)" id="search" />
+			</form>
+
+			</div>
+
+		<ul class="lists">
+
+		</ul>
+
+		</div>
+
+	
+		<div id="form">
+			<form id="create">
+				<button type="button" id="saveContact">Save</button>
+				<div>
+				<select id="tosave">
+				<option value="sim 1">1  USIM</option>
+				<option value="sim 2">2 USIM</option>
+				<option value="gmail">adisamicheal20@gmail.com</option>
+				</select>
+				</div>
+				<div id="holder">
+				<input placeholder="Full Name" type="text" id="fName" />
+				<div></div>
+				</div>
+				<div id="holder">
+				<input placeholder="Email Address" type="email" id="email" />
+				<div></div>
+				</div>
+				<div id="holder">
+				<input placeholder="Phone Number" type="text" id="pNo" />
+				<div></div>
+				</div>
+			</form>
+		</div>
+
+		<!-- <div>
+			<ul>
+
+			</ul>
+		</div> -->
+	</div> 
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+function sortContact(x) {
+}
+
+</script>
+</body>
+</html>
